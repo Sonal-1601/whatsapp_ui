@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:whatsapp_ui/colors.dart';
+import 'package:whatsapp_ui/widgets/contacts_list.dart';
 
 class MobileScreenLayout extends StatefulWidget {
   const MobileScreenLayout({super.key});
@@ -46,7 +47,7 @@ class _MobileScreenLayoutState extends State<MobileScreenLayout> {
                   Tab(text: "Calls"),
                 ]),
           ),
-          body: Text('mobile'),
+          body: const ContactsList(),
         ));
   }
 }
